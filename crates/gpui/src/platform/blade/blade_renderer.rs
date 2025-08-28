@@ -347,6 +347,7 @@ impl BladeRenderer {
         window: &I,
         config: BladeSurfaceConfig,
     ) -> anyhow::Result<Self> {
+        println!("Creating BladeRenderer");
         let surface_config = gpu::SurfaceConfig {
             size: config.size,
             usage: gpu::TextureUsage::TARGET,
